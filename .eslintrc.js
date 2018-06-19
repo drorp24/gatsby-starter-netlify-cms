@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -16,6 +16,8 @@ module.exports = {
   plugins: ['react', 'prettier'],
   rules: {
     'no-console': 'off',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
     'prettier/prettier': 'error',
   },
 };
